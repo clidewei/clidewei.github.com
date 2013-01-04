@@ -11,11 +11,11 @@ pygments: true
 #
 title : Life is an attitude 
 #tagline: clide android php  
-#author : clide
-name : clide wei 
-email : clide@qq.com
-github : clidewei
-twitter : clidewei
+author :  
+  name : clide wei 
+  email : clide@qq.com
+  github : clidewei
+  twitter : clidewei
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

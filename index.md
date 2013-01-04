@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 我的主页 
+title: 首页 
 tagline: 
 ---
 {% include JB/setup %}
