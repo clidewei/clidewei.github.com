@@ -9,13 +9,13 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title :Life is an attitude! 
+title : Life is an attitude 
 #tagline: clide android php  
-author :
-  name : clide wei 
-  email : clide@qq.com
-  github : clidewei
-  twitter : clidewei
+#author : clide
+name : clide wei 
+email : clide@qq.com
+github : clidewei
+twitter : clidewei
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 

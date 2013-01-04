@@ -1,0 +1,11 @@
+
+http://clide.me/archive.html
+http://clide.me/atom.xml
+http://clide.me/categories.html
+http://clide.me/index.html
+http://clide.me/pages.html
+http://clide.me/sitemap.txt
+http://clide.me/tags.html
+
+http://clide.me/lessons/2013/01/04/jekyll-introduction
+http://clide.me/lessons/2011/12/29/jekyll-introduction
