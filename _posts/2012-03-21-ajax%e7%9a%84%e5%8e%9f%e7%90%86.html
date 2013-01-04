@@ -1,0 +1,76 @@
+--- 
+meta: 
+  _oembed_26c19f5672f2962f3b6e0c25ca1cd165: "{{unknown}}"
+  aktt_notify_twitter: "no"
+  _oembed_84757613d34010cff73dc0bb301f5b24: "{{unknown}}"
+  _edit_last: "1"
+title: !binary |
+  YWpheOeahOWOn+eQhg==
+
+tags: 
+- !binary |
+  5Zu96ZmF57Gz5YWw
+
+layout: post
+published: true
+type: post
+status: publish
+---
+道ajax并非一种新的技术，而是几种原有技术的结合体。它由下列技术组合而成。
+1.使用CSS和XHTML来表示。
+2.使用DOM模型来交互和动态显示。
+3.使用XMLHttpRequest来和服务器进行异步通信。
+4.使用javascript来绑定和调用。
+
+创建XMLHttpRequest，不同浏览器有不同方式。
+
+<script language="javascript">  
+var xmlHttp = null;  
+try  
+{  
+    // Firefox, Opera 8.0+, Safari 非IE浏览器  
+    xmlHttp=new XMLHttpRequest();  
+}  
+catch (e)  
+{  
+    //IE浏览器  
+    try  
+    {  
+        xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");  
+    }  
+    catch (e)  
+    {  
+        xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");  
+    }  
+}  
+</script>
+
+
+在利用Ajax向服务器提交请求时，需要先确定三点：
+使用GET或POST方式提交请求？
+需要请求的页面（Page）或代码（Script）？
+将请求的页面或代码加载到页面什么位置？
+view plaincopy to clipboardprint?
+function makerequest(serverPage, objID)   
+{  
+    //将要被替换的页面位置obj  
+    var obj = document.getElementById(objID);  
+    //发出页面（serverPage）请求  
+    xmlhttp.open("GET", serverPage);  
+    xmlhttp.onreadystatechange = function()   
+    {  
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200)   
+        {  
+            //将服务器返回的信息替换到页面位置obj  
+            obj.innerHTML = xmlhttp.responseText;  
+        }  
+    }  
+    xmlhttp.send(null);  
+}    
+其中readyState表示当前对象状态，分为0～4的类别，0: uninitialized, 1: loading, 2: loaded, 3: interactive, 4: complete。status表示HTTP响应状态，常见状态有200 OK，304 Not Modified，401 Unauthorized，403 Forbidden，404 Not Found，500 Internal Server Error，503 Service Unavailable。代码中认定readyState==4和status==200为正常状态。
+
+
+参考文章：
+http://hi.baidu.com/javalogo/blog/item/7844bf09be20889f0a7b821d.html
+http://www.nowamagic.net/ajax/ajax_PicForAjaxPrinciple.php
+

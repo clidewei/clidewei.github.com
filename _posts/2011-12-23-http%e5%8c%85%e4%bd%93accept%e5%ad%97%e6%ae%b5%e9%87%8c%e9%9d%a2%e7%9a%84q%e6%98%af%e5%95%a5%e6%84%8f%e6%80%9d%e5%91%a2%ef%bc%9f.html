@@ -1,0 +1,27 @@
+--- 
+meta: 
+  _edit_last: "1"
+title: !binary |
+  aHR0cOWMheS9k2FjY2VwdOWtl+autemHjOmdoueahHHmmK/llaXmhI/mgJ3l
+  kaLvvJ8=
+
+tags: 
+- !binary |
+  54K554K55ru05ru0
+
+layout: post
+published: true
+type: post
+status: publish
+---
+今天mandy同学发现一个有趣的现象，网站每个http请求的accept字段后面都有一个有趣的q=的东东，如下所示：
+text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+
+这个是什么东东呢？
+无知无畏的clide同学一如既往的摇摇头，表示之前从来没有注意过；后来抽时间求助万能的google，整理如下（参考文章：http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html，主要是14.1中关于accept字段的描述）：
+
+accept字段在http协议中主要是客户端用来表明能够接受的媒介类型，q这个参数主要来表明多种类型的之间优先级关系。q是个相对值，值越高，表明客户端更愿意接受这种类型，默认值为1。我们就拿上面的例子来说吧：客户端包含这个字段主要就是说，你最好给我text/html或者application/xhtml+xml；如果没有的话，给我application/xml也好；如果还是没有，那么随便吧（*/*）。需要注意的是，这个东东，居然是以,为分割的，q参数和媒介类型是通过;来分割的。
+
+ps：英文堪忧啊，看了很久才看明白。看文档的能力要加强。
+ps: 圣诞快乐！
+
