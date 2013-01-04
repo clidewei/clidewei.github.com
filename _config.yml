@@ -10,7 +10,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title :Life is an attitude! 
-tagline: clide android php  
+#tagline: clide android php  
 author :
   name : clide wei 
   email : clide@qq.com
